@@ -1,16 +1,24 @@
+//find the sum of all elements in array
+
 #include<iostream>
 using namespace std;
 
 int main() {
-    int A[] = {12,23,34,45,56,67,78,89,90};
-    int n, sum=0;
+    int n;
     cout<<"Enter number : ";
     cin>>n;
+
+    int arr[n];
+    int sum=0;
+
+    cout<<"Enter "<<n<<" numbers : ";
     for (int i = 0; i < n; i++)
     {
-        sum = sum + A[i];
+        cin>>arr[i];
+        sum = sum+arr[i];
     }
-    cout<<"sum is "<<sum;
-    
+
+    cout<<"The sum is "<<sum;
+   
     return 0;
 }

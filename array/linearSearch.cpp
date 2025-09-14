@@ -1,21 +1,33 @@
+//find the element using linear search.
+
 #include<iostream>
 using namespace std;
 
 int main() {
-    int A[] = {12,23,34,45,56,67,78,89,98,76,64};
+    int n;
+    cout<<"Enter length of array : ";
+    cin>>n;
+
+    int arr[n];
+
+    cout<<"Enter "<<n<<" numbers : ";
+    for (int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
 
     int key;
-    cout<<"Enter key : ";
+    cout<<"Enter the element to search for : ";
     cin>>key;
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < n; i++)
     {
-        if(key==A[i]) {
-            cout<<"Key is found at "<<i;
+        if(arr[i] == key) {
+            cout<<"The element is found at : "<<i<<" position";
             return 0;
         }
     }
-    cout<<"key is not found";
+    cout<<"Not found";
     
     return 0;
 }
