@@ -32,6 +32,8 @@ int main() {
     {
         cin>>arr[i];
     }
+
+    cout<<endl;
     
     int k;
     cout<<"Enter position for rotation : ";
@@ -40,4 +42,5 @@ int main() {
     leftRotation(arr, k , n);
     rightRotation(arr, k , n);
     return 0;
+
 }
